@@ -120,7 +120,7 @@
     <mi>p</mi>
   </msub>
 </math>
-</div>：</p></div><div>
+</div>：</p></div><div style="font-size:12px">
 <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
   <msub>
     <mi>W</mi>
@@ -400,4 +400,607 @@
     <mi>p</mi>
   </msub>
 </math>
-</div> 的看似已经很完美了，但是依旧和论文中的差了一组三角函数和一个巨大的周期 10000</p></div><div class="cds--row"><p class="Markdown-module--paragraph--22afb Markdown-module--paragraph--responsive--d5d96">我们暂且不考虑 10000，先将这个数字当作 2，依旧沿袭上段 “二进制模拟” 的思路</p></div></div><div class="NextPrevious-module--wrapper--570e4"><div class="NextPrevious-module--grid--ff097 cds--grid"><div class="cds--row NextPrevious-module--link-container--e6902"><div class="Grid-module--column--0cbcd NextPrevious-module--link--2902e NextPrevious-module--isHomepage--a3f89 cds--col-sm-2 cds--col-md-4 cds--col-lg-6"><a href="/ai/tr1"><div class="NextPrevious-module--direction--026c0">Previous</div><div class="NextPrevious-module--name--7350d">4. Very Amateur ML Notes: transformer_1</div></a></div><div class="Grid-module--column--0cbcd NextPrevious-module--link--2902e cds--col-sm-2 cds--col-md-4 cds--col-lg-6"><a href="/ai/tr3"><div class="NextPrevious-module--direction--026c0">Next</div><div class="NextPrevious-module--name--7350d">4. Very Amateur ML Notes: transformer_3</div></a></div></div></div></div><div aria-label="This section contains utilities" class="Utils-module--container--b208d Utils-module--hidden--c9099"><div class="cds--layer-two"><button type="button" aria-haspopup="true" class="LaunchButton-module--button--82ee7" aria-label="This launches a modal form to give website feedback."><svg focusable="false" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Zm0,26A12,12,0,1,1,28,16,12,12,0,0,1,16,28Z"></path><path d="M20.5 11A2.5 2.5 0 1023 13.5 2.5 2.5 0 0020.5 11zM8 13H14V15H8zM16 24a8 8 0 006.85-3.89l-1.71-1a6 6 0 01-10.28 0l-1.71 1A8 8 0 0016 24z"></path></svg></button></div><button class="BackToTopBtn-module--button--6668d" type="button" aria-label="Back to Top"><svg focusable="false" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M16 14L6 24 7.4 25.4 16 16.8 24.6 25.4 26 24zM4 8H28V10H4z"></path></svg></button></div><footer class="Footer-module--footer--676fe"><div class="Footer-module--grid--ec6b8 cds--grid"><div class="cds--row"><div class="Grid-module--column--0cbcd cds--col-md-2 cds--col-lg-2"><ul class="Footer-module--nav--3d17a"><li class="Footer-module--listItem--06d5b"><a href="https://ibm.com/design" aria-label="Youtube">Youtube</a></li><li class="Footer-module--listItem--06d5b"><a href="https://ibm.com/design" aria-label="Steam">Steam</a></li><li class="Footer-module--listItem--06d5b"><a href="https://ibm.com/design" aria-label="Discord">Discord</a></li><li class="Footer-module--listItem--06d5b"><a href="https://ibm.com/design" aria-label="Twitter">Twitter</a></li></ul></div><div class="Grid-module--column--0cbcd cds--col-md-2 cds--col-lg-2"><ul class="Footer-module--nav--3d17a"><li class="Footer-module--listItem--06d5b"><a href="https://ibm.com/design" aria-label="Telegram">Telegram</a></li><li class="Footer-module--listItem--06d5b"><a href="https://ibm.com/design" aria-label="Instagram">Instagram</a></li><li class="Footer-module--listItem--06d5b"><a href="https://ibm.com/design" aria-label="Facebook">Facebook</a></li><li class="Footer-module--listItem--06d5b"><a href="https://ibm.com/design" aria-label="Github">Github</a></li></ul></div><div class="Grid-module--column--0cbcd cds--offset-lg-2 Footer-module--content--e6561 cds--col-sm-3 cds--col-md-4 cds--col-lg-4"><p>If you are specifically interested in projects or fun stuffs which I&#x27;m previously / currently doing, feel free to contact me at <strong>bluephoenix2023@outlook.com</strong>.</p><p>or DM me via the contacts I provide.</p><p>Last updated at <!-- -->24 December 2023<!-- -->.</p><p>Built by: React, Gatsby, UI: IBM Carbon</p><p>Images partially from Unsplash</p><p>Contents copyright © 2023 Blue Phoenix</p></div></div><div class="cds--row"><div class="Grid-module--column--0cbcd cds--col-lg-3"><svg></svg></div></div></div></footer></main></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/ai/tr2/";window.___webpackCompilationHash="813a4cc06a9852fd7b10";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-bf5052dcb59b7c67d663.js"],"app":["/app-53f23683773a804e8f26.js"],"component---src-pages-404-js":["/component---src-pages-404-js-5aaae7732c6d2dfd55a1.js"],"component---src-pages-ai-ar-xiv-2312-01552-v-1-mdx":["/component---src-pages-ai-ar-xiv-2312-01552-v-1-mdx-176790e18918d0cfdf52.js"],"component---src-pages-ai-scalinglaws-mdx":["/component---src-pages-ai-scalinglaws-mdx-f4ee6d2de0968cda427e.js"],"component---src-pages-ai-template-js":[],"component---src-pages-ai-tr-1-mdx":["/component---src-pages-ai-tr-1-mdx-609c3c916b7eef6dffcf.js"],"component---src-pages-ai-tr-2-mdx":["/component---src-pages-ai-tr-2-mdx-b46622f6010a146c6af4.js"],"component---src-pages-ai-tr-3-mdx":["/component---src-pages-ai-tr-3-mdx-1c9ec523ca2a8377f425.js"],"component---src-pages-buildsite-customization-mdx":["/component---src-pages-buildsite-customization-mdx-20fa34caa7f7276b2fd0.js"],"component---src-pages-buildsite-howthissitewasbuilt-mdx":["/component---src-pages-buildsite-howthissitewasbuilt-mdx-c86e30ca3f49619d44c5.js"],"component---src-pages-buildsite-template-js":[],"component---src-pages-hardware-nvidia-202311281-mdx":["/component---src-pages-hardware-nvidia-202311281-mdx-daac6808bb8f46d0bb61.js"],"component---src-pages-hardware-nvidia-202311282-mdx":["/component---src-pages-hardware-nvidia-202311282-mdx-ed35e75ec3ce94f3b330.js"],"component---src-pages-hardware-template-js":["/component---src-pages-hardware-template-js-8fd6cce2e8ed5a52404e.js"],"component---src-pages-hi-mdx":["/component---src-pages-hi-mdx-1d825a71f117b5d21d6f.js"],"component---src-pages-homepage-js":[],"component---src-pages-index-mdx":["/component---src-pages-index-mdx-a5c37dcc3326c2f8ef9c.js"],"component---src-pages-posts-lists-js":[],"component---src-pages-todo-mdx":["/component---src-pages-todo-mdx-8f4d5c2c3575dbef09cb.js"]};/*]]>*/</script><script src="/polyfill-bf5052dcb59b7c67d663.js" nomodule=""></script><script src="/app-53f23683773a804e8f26.js" async=""></script><script src="/8e5d161a-e7e0721835d8b44c2abb.js" async=""></script><script src="/framework-d1fe1cde40d4f63f94ea.js" async=""></script><script src="/webpack-runtime-4bda6077f1d0d1f0e24d.js" async=""></script></body></html>
+</div> 的看似已经很完美了，但是依旧和论文中的差了一组三角函数和一个巨大的周期 10000</p></div><div class="cds--row"><p class="Markdown-module--paragraph--22afb Markdown-module--paragraph--responsive--d5d96">我们暂且不考虑 2 和 10000 的关系，先用 10000 说明，依旧沿袭上段 “二进制模拟” 的思路</p></div><div class="cds--row"><p class="Markdown-module--paragraph--22afb Markdown-module--paragraph--responsive--d5d96">定义放缩倍率为：</p></div><div>
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+  <msub>
+    <mi>w</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>i</mi>
+    </mrow>
+  </msub>
+  <mo>=</mo>
+  <mfrac>
+    <mn>1</mn>
+    <msup>
+      <mn>10000</mn>
+      <mrow class="MJX-TeXAtom-ORD">
+        <mn>2</mn>
+        <mi>i</mi>
+        <mrow class="MJX-TeXAtom-ORD">
+          <mo>/</mo>
+        </mrow>
+        <mo stretchy="false">(</mo>
+        <msub>
+          <mi>d</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>e</mi>
+          </mrow>
+        </msub>
+        <mo stretchy="false">)</mo>
+      </mrow>
+    </msup>
+  </mfrac>
+</math>
+</div><div class="cds--row"><p class="Markdown-module--paragraph--22afb Markdown-module--paragraph--responsive--d5d96">同时定义 PE：</p></div><div style="font-size:8px;white-space:nowrap;display:inline-block">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>P</mi>
+  <msub>
+    <mi>E</mi>
+    <mi>t</mi>
+  </msub>
+  <mo>=</mo>
+  <mo stretchy="false">[</mo>
+  <mi>s</mi>
+  <mi>i</mi>
+  <mi>n</mi>
+  <mo stretchy="false">(</mo>
+  <msub>
+    <mi>w</mi>
+    <mn>0</mn>
+  </msub>
+  <mi>t</mi>
+  <mo stretchy="false">)</mo>
+  <mo>,</mo>
+  <mi>c</mi>
+  <mi>o</mi>
+  <mi>s</mi>
+  <mo stretchy="false">(</mo>
+  <msub>
+    <mi>w</mi>
+    <mn>0</mn>
+  </msub>
+  <mi>t</mi>
+  <mo stretchy="false">)</mo>
+  <mo>,</mo>
+  <mi>s</mi>
+  <mi>i</mi>
+  <mi>n</mi>
+  <mo stretchy="false">(</mo>
+  <msub>
+    <mi>w</mi>
+    <mn>1</mn>
+  </msub>
+  <mi>t</mi>
+  <mo stretchy="false">)</mo>
+  <mo>,</mo>
+  <mi>c</mi>
+  <mi>o</mi>
+  <mi>s</mi>
+  <mo stretchy="false">(</mo>
+  <msub>
+    <mi>w</mi>
+    <mn>1</mn>
+  </msub>
+  <mi>t</mi>
+  <mo stretchy="false">)</mo>
+  <mo>,</mo>
+  <mo>.</mo>
+  <mo>.</mo>
+  <mo>.</mo>
+  <mo>,</mo>
+  <mi>s</mi>
+  <mi>i</mi>
+  <mi>n</mi>
+  <mo stretchy="false">(</mo>
+  <msub>
+    <mi>w</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mfrac>
+        <msub>
+          <mi>d</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>e</mi>
+          </mrow>
+        </msub>
+        <mn>2</mn>
+      </mfrac>
+      <mo>&#x2212;<!-- − --></mo>
+      <mn>1</mn>
+    </mrow>
+  </msub>
+  <mi>t</mi>
+  <mo stretchy="false">)</mo>
+  <mo>,</mo>
+  <mi>c</mi>
+  <mi>o</mi>
+  <mi>s</mi>
+  <mo stretchy="false">(</mo>
+  <msub>
+    <mi>w</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mfrac>
+        <msub>
+          <mi>d</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>e</mi>
+          </mrow>
+        </msub>
+        <mn>2</mn>
+      </mfrac>
+      <mo>&#x2212;<!-- − --></mo>
+      <mn>1</mn>
+    </mrow>
+  </msub>
+  <mi>t</mi>
+  <mo stretchy="false">)</mo>
+  <mo stretchy="false">]</mo>
+  <mo>=</mo>
+  <msub>
+    <mi>W</mi>
+    <mi>p</mi>
+  </msub>
+  <mo stretchy="false">[</mo>
+  <mo>:</mo>
+  <mi>t</mi>
+  <mo stretchy="false">]</mo>
+  <mspace linebreak="newline" />
+</math>
+</div><div class="cds--row"><p class="Markdown-module--paragraph--22afb Markdown-module--paragraph--responsive--d5d96">t 位 token 偏移 delta t 位的位置编码可以用一个线性变换得到：</p></div><br/><div style="font-size:5px;white-space:nowrap;display:inline-block">
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mi>P</mi>
+  <msub>
+    <mi>E</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>t</mi>
+      <mo>+</mo>
+      <mo>&#x25B3;<!-- △ --></mo>
+      <mi>t</mi>
+    </mrow>
+  </msub>
+  <mo>=</mo>
+  <msub>
+    <mi>T</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mo>&#x25B3;<!-- △ --></mo>
+      <mi>t</mi>
+    </mrow>
+  </msub>
+  <mo>&#x2217;<!-- ∗ --></mo>
+  <mi>P</mi>
+  <msub>
+    <mi>E</mi>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mi>t</mi>
+    </mrow>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+    <mo>(</mo>
+    <mtable rowspacing="4pt" columnspacing="1em">
+      <mtr>
+        <mtd>
+          <mrow>
+            <mo>[</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mi>c</mi>
+                  <mi>o</mi>
+                  <mi>s</mi>
+                  <mo stretchy="false">(</mo>
+                  <msub>
+                    <mi>w</mi>
+                    <mn>0</mn>
+                  </msub>
+                  <mo>&#x25B3;<!-- △ --></mo>
+                  <mi>t</mi>
+                  <mo stretchy="false">)</mo>
+                </mtd>
+                <mtd>
+                  <mi>s</mi>
+                  <mi>i</mi>
+                  <mi>n</mi>
+                  <mo stretchy="false">(</mo>
+                  <msub>
+                    <mi>w</mi>
+                    <mn>0</mn>
+                  </msub>
+                  <mo>&#x25B3;<!-- △ --></mo>
+                  <mi>t</mi>
+                  <mo stretchy="false">)</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mi>s</mi>
+                  <mi>i</mi>
+                  <mi>n</mi>
+                  <mo stretchy="false">(</mo>
+                  <msub>
+                    <mi>w</mi>
+                    <mn>0</mn>
+                  </msub>
+                  <mo>&#x25B3;<!-- △ --></mo>
+                  <mi>t</mi>
+                  <mo stretchy="false">)</mo>
+                </mtd>
+                <mtd>
+                  <mi>c</mi>
+                  <mi>o</mi>
+                  <mi>s</mi>
+                  <mo stretchy="false">(</mo>
+                  <msub>
+                    <mi>w</mi>
+                    <mn>0</mn>
+                  </msub>
+                  <mo>&#x25B3;<!-- △ --></mo>
+                  <mi>t</mi>
+                  <mo stretchy="false">)</mo>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>]</mo>
+          </mrow>
+        </mtd>
+        <mtd>
+          <mo>.</mo>
+          <mo>.</mo>
+          <mo>.</mo>
+        </mtd>
+        <mtd>
+          <mn>0</mn>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mo>.</mo>
+          <mo>.</mo>
+          <mo>.</mo>
+        </mtd>
+        <mtd>
+          <mo>.</mo>
+          <mo>.</mo>
+          <mo>.</mo>
+        </mtd>
+        <mtd>
+          <mo>.</mo>
+          <mo>.</mo>
+          <mo>.</mo>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mn>0</mn>
+        </mtd>
+        <mtd>
+          <mo>.</mo>
+          <mo>.</mo>
+          <mo>.</mo>
+        </mtd>
+        <mtd>
+          <mrow>
+            <mo>[</mo>
+            <mtable rowspacing="4pt" columnspacing="1em">
+              <mtr>
+                <mtd>
+                  <mi>c</mi>
+                  <mi>o</mi>
+                  <mi>s</mi>
+                  <mo stretchy="false">(</mo>
+                  <msub>
+                    <mi>w</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <msub>
+                          <mi>d</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>e</mi>
+                          </mrow>
+                        </msub>
+                        <mn>2</mn>
+                      </mfrac>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>&#x25B3;<!-- △ --></mo>
+                  <mi>t</mi>
+                  <mo stretchy="false">)</mo>
+                </mtd>
+                <mtd>
+                  <mi>s</mi>
+                  <mi>i</mi>
+                  <mi>n</mi>
+                  <mo stretchy="false">(</mo>
+                  <msub>
+                    <mi>w</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <msub>
+                          <mi>d</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>e</mi>
+                          </mrow>
+                        </msub>
+                        <mn>2</mn>
+                      </mfrac>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>&#x25B3;<!-- △ --></mo>
+                  <mi>t</mi>
+                  <mo stretchy="false">)</mo>
+                </mtd>
+              </mtr>
+              <mtr>
+                <mtd>
+                  <mo>&#x2212;<!-- − --></mo>
+                  <mi>s</mi>
+                  <mi>i</mi>
+                  <mi>n</mi>
+                  <mo stretchy="false">(</mo>
+                  <msub>
+                    <mi>w</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <msub>
+                          <mi>d</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>e</mi>
+                          </mrow>
+                        </msub>
+                        <mn>2</mn>
+                      </mfrac>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>&#x25B3;<!-- △ --></mo>
+                  <mi>t</mi>
+                  <mo stretchy="false">)</mo>
+                </mtd>
+                <mtd>
+                  <mi>c</mi>
+                  <mi>o</mi>
+                  <mi>s</mi>
+                  <mo stretchy="false">(</mo>
+                  <msub>
+                    <mi>w</mi>
+                    <mrow class="MJX-TeXAtom-ORD">
+                      <mfrac>
+                        <msub>
+                          <mi>d</mi>
+                          <mrow class="MJX-TeXAtom-ORD">
+                            <mi>e</mi>
+                          </mrow>
+                        </msub>
+                        <mn>2</mn>
+                      </mfrac>
+                      <mo>&#x2212;<!-- − --></mo>
+                      <mn>1</mn>
+                    </mrow>
+                  </msub>
+                  <mo>&#x25B3;<!-- △ --></mo>
+                  <mi>t</mi>
+                  <mo stretchy="false">)</mo>
+                </mtd>
+              </mtr>
+            </mtable>
+            <mo>]</mo>
+          </mrow>
+        </mtd>
+      </mtr>
+    </mtable>
+    <mo>)</mo>
+  </mrow>
+  <mrow>
+    <mo>(</mo>
+    <mtable rowspacing="4pt" columnspacing="1em">
+      <mtr>
+        <mtd>
+          <mi>s</mi>
+          <mi>i</mi>
+          <mi>n</mi>
+          <mo stretchy="false">(</mo>
+          <msub>
+            <mi>w</mi>
+            <mn>0</mn>
+          </msub>
+          <mi>t</mi>
+          <mo stretchy="false">)</mo>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mi>c</mi>
+          <mi>o</mi>
+          <mi>s</mi>
+          <mo stretchy="false">(</mo>
+          <msub>
+            <mi>w</mi>
+            <mn>0</mn>
+          </msub>
+          <mi>t</mi>
+          <mo stretchy="false">)</mo>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mo>.</mo>
+          <mo>.</mo>
+          <mo>.</mo>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mi>s</mi>
+          <mi>i</mi>
+          <mi>n</mi>
+          <mo stretchy="false">(</mo>
+          <msub>
+            <mi>w</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <msub>
+                  <mi>d</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>e</mi>
+                  </mrow>
+                </msub>
+                <mn>2</mn>
+              </mfrac>
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>1</mn>
+            </mrow>
+          </msub>
+          <mi>t</mi>
+          <mo stretchy="false">)</mo>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mi>c</mi>
+          <mi>o</mi>
+          <mi>s</mi>
+          <mo stretchy="false">(</mo>
+          <msub>
+            <mi>w</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <msub>
+                  <mi>d</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>e</mi>
+                  </mrow>
+                </msub>
+                <mn>2</mn>
+              </mfrac>
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>1</mn>
+            </mrow>
+          </msub>
+          <mi>t</mi>
+          <mo stretchy="false">)</mo>
+        </mtd>
+      </mtr>
+    </mtable>
+    <mo>)</mo>
+  </mrow>
+  <mo>=</mo>
+  <mrow>
+    <mo>(</mo>
+    <mtable rowspacing="4pt" columnspacing="1em">
+      <mtr>
+        <mtd>
+          <mi>s</mi>
+          <mi>i</mi>
+          <mi>n</mi>
+          <mo stretchy="false">(</mo>
+          <msub>
+            <mi>w</mi>
+            <mn>0</mn>
+          </msub>
+          <mo stretchy="false">(</mo>
+          <mi>t</mi>
+          <mo>+</mo>
+          <mo>&#x25B3;<!-- △ --></mo>
+          <mi>t</mi>
+          <mo stretchy="false">)</mo>
+          <mo stretchy="false">)</mo>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mi>c</mi>
+          <mi>o</mi>
+          <mi>s</mi>
+          <mo stretchy="false">(</mo>
+          <msub>
+            <mi>w</mi>
+            <mn>0</mn>
+          </msub>
+          <mo stretchy="false">(</mo>
+          <mi>t</mi>
+          <mo>+</mo>
+          <mo>&#x25B3;<!-- △ --></mo>
+          <mi>t</mi>
+          <mo stretchy="false">)</mo>
+          <mo stretchy="false">)</mo>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mo>.</mo>
+          <mo>.</mo>
+          <mo>.</mo>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mi>s</mi>
+          <mi>i</mi>
+          <mi>n</mi>
+          <mo stretchy="false">(</mo>
+          <msub>
+            <mi>w</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <msub>
+                  <mi>d</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>e</mi>
+                  </mrow>
+                </msub>
+                <mn>2</mn>
+              </mfrac>
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>1</mn>
+            </mrow>
+          </msub>
+          <mo stretchy="false">(</mo>
+          <mi>t</mi>
+          <mo>+</mo>
+          <mo>&#x25B3;<!-- △ --></mo>
+          <mi>t</mi>
+          <mo stretchy="false">)</mo>
+          <mo stretchy="false">)</mo>
+        </mtd>
+      </mtr>
+      <mtr>
+        <mtd>
+          <mi>c</mi>
+          <mi>o</mi>
+          <mi>s</mi>
+          <mo stretchy="false">(</mo>
+          <msub>
+            <mi>w</mi>
+            <mrow class="MJX-TeXAtom-ORD">
+              <mfrac>
+                <msub>
+                  <mi>d</mi>
+                  <mrow class="MJX-TeXAtom-ORD">
+                    <mi>e</mi>
+                  </mrow>
+                </msub>
+                <mn>2</mn>
+              </mfrac>
+              <mo>&#x2212;<!-- − --></mo>
+              <mn>1</mn>
+            </mrow>
+          </msub>
+          <mo stretchy="false">(</mo>
+          <mi>t</mi>
+          <mo>+</mo>
+          <mo>&#x25B3;<!-- △ --></mo>
+          <mi>t</mi>
+          <mo stretchy="false">)</mo>
+          <mo stretchy="false">)</mo>
+        </mtd>
+      </mtr>
+    </mtable>
+    <mo>)</mo>
+  </mrow>
+</math>
+</div><div class="cds--row"><p class="Markdown-module--paragraph--22afb Markdown-module--paragraph--responsive--d5d96">此外，使用三角函数表示 pe 还有其他两个重要的原因，这个要在 qkv （自注意力机制）的语境下理解</p></div><div class="cds--row"><p class="Markdown-module--paragraph--22afb Markdown-module--paragraph--responsive--d5d96">注意，两个大括号中间不是矩阵乘法，而是两组两组乘以对角线的矩阵，即使这样，这种运算方式也是线性的，这里就不证明了</p></div></div><div class="NextPrevious-module--wrapper--570e4"><div class="NextPrevious-module--grid--ff097 cds--grid"><div class="cds--row NextPrevious-module--link-container--e6902"><div class="Grid-module--column--0cbcd NextPrevious-module--link--2902e NextPrevious-module--isHomepage--a3f89 cds--col-sm-2 cds--col-md-4 cds--col-lg-6"><a href="/ai/tr1"><div class="NextPrevious-module--direction--026c0">Previous</div><div class="NextPrevious-module--name--7350d">4. Very Amateur ML Notes: transformer_1</div></a></div><div class="Grid-module--column--0cbcd NextPrevious-module--link--2902e cds--col-sm-2 cds--col-md-4 cds--col-lg-6"><a href="/ai/tr3"><div class="NextPrevious-module--direction--026c0">Next</div><div class="NextPrevious-module--name--7350d">4. Very Amateur ML Notes: transformer_3</div></a></div></div></div></div><div aria-label="This section contains utilities" class="Utils-module--container--b208d Utils-module--hidden--c9099"><div class="cds--layer-two"><button type="button" aria-haspopup="true" class="LaunchButton-module--button--82ee7" aria-label="This launches a modal form to give website feedback."><svg focusable="false" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M16,2A14,14,0,1,0,30,16,14,14,0,0,0,16,2Zm0,26A12,12,0,1,1,28,16,12,12,0,0,1,16,28Z"></path><path d="M20.5 11A2.5 2.5 0 1023 13.5 2.5 2.5 0 0020.5 11zM8 13H14V15H8zM16 24a8 8 0 006.85-3.89l-1.71-1a6 6 0 01-10.28 0l-1.71 1A8 8 0 0016 24z"></path></svg></button></div><button class="BackToTopBtn-module--button--6668d" type="button" aria-label="Back to Top"><svg focusable="false" preserveAspectRatio="xMidYMid meet" fill="currentColor" width="20" height="20" viewBox="0 0 32 32" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path d="M16 14L6 24 7.4 25.4 16 16.8 24.6 25.4 26 24zM4 8H28V10H4z"></path></svg></button></div><footer class="Footer-module--footer--676fe"><div class="Footer-module--grid--ec6b8 cds--grid"><div class="cds--row"><div class="Grid-module--column--0cbcd cds--col-md-2 cds--col-lg-2"><ul class="Footer-module--nav--3d17a"><li class="Footer-module--listItem--06d5b"><a href="https://ibm.com/design" aria-label="Youtube">Youtube</a></li><li class="Footer-module--listItem--06d5b"><a href="https://ibm.com/design" aria-label="Steam">Steam</a></li><li class="Footer-module--listItem--06d5b"><a href="https://ibm.com/design" aria-label="Discord">Discord</a></li><li class="Footer-module--listItem--06d5b"><a href="https://ibm.com/design" aria-label="Twitter">Twitter</a></li></ul></div><div class="Grid-module--column--0cbcd cds--col-md-2 cds--col-lg-2"><ul class="Footer-module--nav--3d17a"><li class="Footer-module--listItem--06d5b"><a href="https://ibm.com/design" aria-label="Telegram">Telegram</a></li><li class="Footer-module--listItem--06d5b"><a href="https://ibm.com/design" aria-label="Instagram">Instagram</a></li><li class="Footer-module--listItem--06d5b"><a href="https://ibm.com/design" aria-label="Facebook">Facebook</a></li><li class="Footer-module--listItem--06d5b"><a href="https://ibm.com/design" aria-label="Github">Github</a></li></ul></div><div class="Grid-module--column--0cbcd cds--offset-lg-2 Footer-module--content--e6561 cds--col-sm-3 cds--col-md-4 cds--col-lg-4"><p>If you are specifically interested in projects or fun stuffs which I&#x27;m previously / currently doing, feel free to contact me at <strong>bluephoenix2023@outlook.com</strong>.</p><p>or DM me via the contacts I provide.</p><p>Last updated at <!-- -->24 December 2023<!-- -->.</p><p>Built by: React, Gatsby, UI: IBM Carbon</p><p>Images partially from Unsplash</p><p>Contents copyright © 2023 Blue Phoenix</p></div></div><div class="cds--row"><div class="Grid-module--column--0cbcd cds--col-lg-3"><svg></svg></div></div></div></footer></main></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/ai/tr2/";window.___webpackCompilationHash="68fc1becb086d1568fd0";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-bf5052dcb59b7c67d663.js"],"app":["/app-53f23683773a804e8f26.js"],"component---src-pages-404-js":["/component---src-pages-404-js-5aaae7732c6d2dfd55a1.js"],"component---src-pages-ai-ar-xiv-2312-01552-v-1-mdx":["/component---src-pages-ai-ar-xiv-2312-01552-v-1-mdx-176790e18918d0cfdf52.js"],"component---src-pages-ai-scalinglaws-mdx":["/component---src-pages-ai-scalinglaws-mdx-f4ee6d2de0968cda427e.js"],"component---src-pages-ai-template-js":[],"component---src-pages-ai-tr-1-mdx":["/component---src-pages-ai-tr-1-mdx-609c3c916b7eef6dffcf.js"],"component---src-pages-ai-tr-2-mdx":["/component---src-pages-ai-tr-2-mdx-56cfd9e626fdf167c3b4.js"],"component---src-pages-ai-tr-3-mdx":["/component---src-pages-ai-tr-3-mdx-1c9ec523ca2a8377f425.js"],"component---src-pages-buildsite-customization-mdx":["/component---src-pages-buildsite-customization-mdx-20fa34caa7f7276b2fd0.js"],"component---src-pages-buildsite-howthissitewasbuilt-mdx":["/component---src-pages-buildsite-howthissitewasbuilt-mdx-c86e30ca3f49619d44c5.js"],"component---src-pages-buildsite-template-js":[],"component---src-pages-hardware-nvidia-202311281-mdx":["/component---src-pages-hardware-nvidia-202311281-mdx-daac6808bb8f46d0bb61.js"],"component---src-pages-hardware-nvidia-202311282-mdx":["/component---src-pages-hardware-nvidia-202311282-mdx-ed35e75ec3ce94f3b330.js"],"component---src-pages-hardware-template-js":["/component---src-pages-hardware-template-js-8fd6cce2e8ed5a52404e.js"],"component---src-pages-hi-mdx":["/component---src-pages-hi-mdx-1d825a71f117b5d21d6f.js"],"component---src-pages-homepage-js":[],"component---src-pages-index-mdx":["/component---src-pages-index-mdx-a5c37dcc3326c2f8ef9c.js"],"component---src-pages-posts-lists-js":[],"component---src-pages-todo-mdx":["/component---src-pages-todo-mdx-8f4d5c2c3575dbef09cb.js"]};/*]]>*/</script><script src="/polyfill-bf5052dcb59b7c67d663.js" nomodule=""></script><script src="/app-53f23683773a804e8f26.js" async=""></script><script src="/8e5d161a-e7e0721835d8b44c2abb.js" async=""></script><script src="/framework-d1fe1cde40d4f63f94ea.js" async=""></script><script src="/webpack-runtime-ceefc4e28f415a241a7a.js" async=""></script></body></html>
