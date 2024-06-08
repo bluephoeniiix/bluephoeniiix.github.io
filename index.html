@@ -4,7 +4,7 @@
 			typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme');
 		const theme =
 			storedTheme ||
-			(window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+			(window.matchMedia('(prefers-color-scheme: dark)').matches ? 'light' : 'dark');
 		document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
 		return {
 			updatePickers(theme = storedTheme || 'auto') {
@@ -35,7 +35,10 @@
 <div class="t2"><p>This website is a supplementary record for my YouTube channel, covering but
 not limited to:</p></div>
 <ul>
-<li><em><a href="/catalogs/">todo</a></em></li>
+<li>City Skylines game play</li>
+<li>Fish Keeping Recording</li>
+<li>Photographies</li>
+<li>Some self-learning notes</li>
 </ul>
 <br/>
 <div class="t1">Project</div>
